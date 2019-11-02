@@ -1,0 +1,16 @@
+
+.hero-container {
+  @apply flex items-center justify-center flex-col text-center bg-cover bg-center bg-no-repeat pt-12 pb-12;
+
+  & h1 {
+    @apply text-5xl text-gray-100;
+  }
+
+  & p {
+    @apply max-w-2xl text-white mt-4 mb-8;
+  }
+}
+
+.nuxt-link-exact-active {
+  @apply font-bold;
+}
