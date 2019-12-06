@@ -1,4 +1,4 @@
-const env = require('dotenv').config()
+require('dotenv').config()
 import path from 'path'
 
 export default {
@@ -7,7 +7,9 @@ export default {
   ** Doc: https://nuxtjs.org/api/configuration-mode
   */
   mode: 'universal',
-  env: env.parsed,
+  env: {
+    TEST_ENV_VAR: process.env.TEST_ENV_VAR
+  },
 
   /*
   ** Headers of the page
